@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A5E20AE20A57DDA0056DDD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E20AD20A57DDA0056DDD5 /* AppDelegate.m */; };
+		2A5E20B120A57DDA0056DDD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E20B020A57DDA0056DDD5 /* ViewController.m */; };
+		2A5E20B420A57DDA0056DDD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E20B220A57DDA0056DDD5 /* Main.storyboard */; };
+		2A5E20B620A57DDB0056DDD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E20B520A57DDB0056DDD5 /* Assets.xcassets */; };
+		2A5E20B920A57DDB0056DDD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E20B720A57DDB0056DDD5 /* LaunchScreen.storyboard */; };
+		2A5E20BC20A57DDB0056DDD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E20BB20A57DDB0056DDD5 /* main.m */; };
+		2A5E20C620A57DDB0056DDD5 /* PullDown_Picture_ToBigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E20C520A57DDB0056DDD5 /* PullDown_Picture_ToBigTests.m */; };
+		2A5E20D120A57DDB0056DDD5 /* PullDown_Picture_ToBigUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E20D020A57DDB0056DDD5 /* PullDown_Picture_ToBigUITests.m */; };
+		2A5E20E020A57F5B0056DDD5 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E20DF20A57F5B0056DDD5 /* TableViewCell.m */; };
+		2A5E20E220A582420056DDD5 /* WechatIMG1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E20E120A582420056DDD5 /* WechatIMG1.jpeg */; };
+		445C3305D2C910394A5DDFFF /* libPods-PullDown-Picture-ToBig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1972F30FEE1ACFCAA366A8AE /* libPods-PullDown-Picture-ToBig.a */; };
+		741226431D828CCA74ED78C0 /* libPods-PullDown-Picture-ToBigUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A57361BF5273CA488B5510B5 /* libPods-PullDown-Picture-ToBigUITests.a */; };
+		B85829368538721842DAF95D /* libPods-PullDown-Picture-ToBigTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E5E2E57DD4240B42C4501E /* libPods-PullDown-Picture-ToBigTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A5E20C220A57DDB0056DDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5E20A120A57DDA0056DDD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5E20A820A57DDA0056DDD5;
+			remoteInfo = "PullDown-Picture-ToBig";
+		};
+		2A5E20CD20A57DDB0056DDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5E20A120A57DDA0056DDD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5E20A820A57DDA0056DDD5;
+			remoteInfo = "PullDown-Picture-ToBig";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1972F30FEE1ACFCAA366A8AE /* libPods-PullDown-Picture-ToBig.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PullDown-Picture-ToBig.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		222861FA68FDE8494CBC0F69 /* Pods-PullDown-Picture-ToBigUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullDown-Picture-ToBigUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PullDown-Picture-ToBigUITests/Pods-PullDown-Picture-ToBigUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A5E20A920A57DDA0056DDD5 /* PullDown-Picture-ToBig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PullDown-Picture-ToBig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5E20AC20A57DDA0056DDD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A5E20AD20A57DDA0056DDD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A5E20AF20A57DDA0056DDD5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A5E20B020A57DDA0056DDD5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A5E20B320A57DDA0056DDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A5E20B520A57DDB0056DDD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5E20B820A57DDB0056DDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A5E20BA20A57DDB0056DDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5E20BB20A57DDB0056DDD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A5E20C120A57DDB0056DDD5 /* PullDown-Picture-ToBigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PullDown-Picture-ToBigTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5E20C520A57DDB0056DDD5 /* PullDown_Picture_ToBigTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PullDown_Picture_ToBigTests.m; sourceTree = "<group>"; };
+		2A5E20C720A57DDB0056DDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5E20CC20A57DDB0056DDD5 /* PullDown-Picture-ToBigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PullDown-Picture-ToBigUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5E20D020A57DDB0056DDD5 /* PullDown_Picture_ToBigUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PullDown_Picture_ToBigUITests.m; sourceTree = "<group>"; };
+		2A5E20D220A57DDB0056DDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5E20DE20A57F5B0056DDD5 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2A5E20DF20A57F5B0056DDD5 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2A5E20E120A582420056DDD5 /* WechatIMG1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG1.jpeg; sourceTree = "<group>"; };
+		4B9FA805AAD6ED41D9208590 /* Pods-PullDown-Picture-ToBigUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullDown-Picture-ToBigUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullDown-Picture-ToBigUITests/Pods-PullDown-Picture-ToBigUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54A06F3D901F8FCB833037BE /* Pods-PullDown-Picture-ToBig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullDown-Picture-ToBig.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullDown-Picture-ToBig/Pods-PullDown-Picture-ToBig.debug.xcconfig"; sourceTree = "<group>"; };
+		65E5E2E57DD4240B42C4501E /* libPods-PullDown-Picture-ToBigTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PullDown-Picture-ToBigTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57361BF5273CA488B5510B5 /* libPods-PullDown-Picture-ToBigUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PullDown-Picture-ToBigUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D5B161FDD6B39C95449B6C /* Pods-PullDown-Picture-ToBigTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullDown-Picture-ToBigTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullDown-Picture-ToBigTests/Pods-PullDown-Picture-ToBigTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DACE5E09EF01AA1F7595DB54 /* Pods-PullDown-Picture-ToBig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullDown-Picture-ToBig.release.xcconfig"; path = "Pods/Target Support Files/Pods-PullDown-Picture-ToBig/Pods-PullDown-Picture-ToBig.release.xcconfig"; sourceTree = "<group>"; };
+		E52F93C9E178B3003B515C14 /* Pods-PullDown-Picture-ToBigTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullDown-Picture-ToBigTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PullDown-Picture-ToBigTests/Pods-PullDown-Picture-ToBigTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5E20A620A57DDA0056DDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445C3305D2C910394A5DDFFF /* libPods-PullDown-Picture-ToBig.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5E20BE20A57DDB0056DDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85829368538721842DAF95D /* libPods-PullDown-Picture-ToBigTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5E20C920A57DDB0056DDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741226431D828CCA74ED78C0 /* libPods-PullDown-Picture-ToBigUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5E20A020A57DDA0056DDD5 = {
+			isa = PBXGroup;
+			children = (
+				2A5E20AB20A57DDA0056DDD5 /* PullDown-Picture-ToBig */,
+				2A5E20C420A57DDB0056DDD5 /* PullDown-Picture-ToBigTests */,
+				2A5E20CF20A57DDB0056DDD5 /* PullDown-Picture-ToBigUITests */,
+				2A5E20AA20A57DDA0056DDD5 /* Products */,
+				7C36AD53EE53AC584A1D64B7 /* Pods */,
+				FBD7E355E5AEFD87AD40057D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5E20AA20A57DDA0056DDD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5E20A920A57DDA0056DDD5 /* PullDown-Picture-ToBig.app */,
+				2A5E20C120A57DDB0056DDD5 /* PullDown-Picture-ToBigTests.xctest */,
+				2A5E20CC20A57DDB0056DDD5 /* PullDown-Picture-ToBigUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5E20AB20A57DDA0056DDD5 /* PullDown-Picture-ToBig */ = {
+			isa = PBXGroup;
+			children = (
+				2A5E20AC20A57DDA0056DDD5 /* AppDelegate.h */,
+				2A5E20AD20A57DDA0056DDD5 /* AppDelegate.m */,
+				2A5E20AF20A57DDA0056DDD5 /* ViewController.h */,
+				2A5E20B020A57DDA0056DDD5 /* ViewController.m */,
+				2A5E20DE20A57F5B0056DDD5 /* TableViewCell.h */,
+				2A5E20DF20A57F5B0056DDD5 /* TableViewCell.m */,
+				2A5E20B220A57DDA0056DDD5 /* Main.storyboard */,
+				2A5E20B520A57DDB0056DDD5 /* Assets.xcassets */,
+				2A5E20B720A57DDB0056DDD5 /* LaunchScreen.storyboard */,
+				2A5E20BA20A57DDB0056DDD5 /* Info.plist */,
+				2A5E20E120A582420056DDD5 /* WechatIMG1.jpeg */,
+				2A5E20BB20A57DDB0056DDD5 /* main.m */,
+			);
+			path = "PullDown-Picture-ToBig";
+			sourceTree = "<group>";
+		};
+		2A5E20C420A57DDB0056DDD5 /* PullDown-Picture-ToBigTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5E20C520A57DDB0056DDD5 /* PullDown_Picture_ToBigTests.m */,
+				2A5E20C720A57DDB0056DDD5 /* Info.plist */,
+			);
+			path = "PullDown-Picture-ToBigTests";
+			sourceTree = "<group>";
+		};
+		2A5E20CF20A57DDB0056DDD5 /* PullDown-Picture-ToBigUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5E20D020A57DDB0056DDD5 /* PullDown_Picture_ToBigUITests.m */,
+				2A5E20D220A57DDB0056DDD5 /* Info.plist */,
+			);
+			path = "PullDown-Picture-ToBigUITests";
+			sourceTree = "<group>";
+		};
+		7C36AD53EE53AC584A1D64B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54A06F3D901F8FCB833037BE /* Pods-PullDown-Picture-ToBig.debug.xcconfig */,
+				DACE5E09EF01AA1F7595DB54 /* Pods-PullDown-Picture-ToBig.release.xcconfig */,
+				C7D5B161FDD6B39C95449B6C /* Pods-PullDown-Picture-ToBigTests.debug.xcconfig */,
+				E52F93C9E178B3003B515C14 /* Pods-PullDown-Picture-ToBigTests.release.xcconfig */,
+				4B9FA805AAD6ED41D9208590 /* Pods-PullDown-Picture-ToBigUITests.debug.xcconfig */,
+				222861FA68FDE8494CBC0F69 /* Pods-PullDown-Picture-ToBigUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBD7E355E5AEFD87AD40057D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1972F30FEE1ACFCAA366A8AE /* libPods-PullDown-Picture-ToBig.a */,
+				65E5E2E57DD4240B42C4501E /* libPods-PullDown-Picture-ToBigTests.a */,
+				A57361BF5273CA488B5510B5 /* libPods-PullDown-Picture-ToBigUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5E20A820A57DDA0056DDD5 /* PullDown-Picture-ToBig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5E20D520A57DDB0056DDD5 /* Build configuration list for PBXNativeTarget "PullDown-Picture-ToBig" */;
+			buildPhases = (
+				57C2E6DD3D73496A249AA8FB /* [CP] Check Pods Manifest.lock */,
+				2A5E20A520A57DDA0056DDD5 /* Sources */,
+				2A5E20A620A57DDA0056DDD5 /* Frameworks */,
+				2A5E20A720A57DDA0056DDD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PullDown-Picture-ToBig";
+			productName = "PullDown-Picture-ToBig";
+			productReference = 2A5E20A920A57DDA0056DDD5 /* PullDown-Picture-ToBig.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A5E20C020A57DDB0056DDD5 /* PullDown-Picture-ToBigTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5E20D820A57DDB0056DDD5 /* Build configuration list for PBXNativeTarget "PullDown-Picture-ToBigTests" */;
+			buildPhases = (
+				14E4A39FBDC8C5CB97FC0924 /* [CP] Check Pods Manifest.lock */,
+				2A5E20BD20A57DDB0056DDD5 /* Sources */,
+				2A5E20BE20A57DDB0056DDD5 /* Frameworks */,
+				2A5E20BF20A57DDB0056DDD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5E20C320A57DDB0056DDD5 /* PBXTargetDependency */,
+			);
+			name = "PullDown-Picture-ToBigTests";
+			productName = "PullDown-Picture-ToBigTests";
+			productReference = 2A5E20C120A57DDB0056DDD5 /* PullDown-Picture-ToBigTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A5E20CB20A57DDB0056DDD5 /* PullDown-Picture-ToBigUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5E20DB20A57DDB0056DDD5 /* Build configuration list for PBXNativeTarget "PullDown-Picture-ToBigUITests" */;
+			buildPhases = (
+				2618B83C8CF451239101A270 /* [CP] Check Pods Manifest.lock */,
+				2A5E20C820A57DDB0056DDD5 /* Sources */,
+				2A5E20C920A57DDB0056DDD5 /* Frameworks */,
+				2A5E20CA20A57DDB0056DDD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5E20CE20A57DDB0056DDD5 /* PBXTargetDependency */,
+			);
+			name = "PullDown-Picture-ToBigUITests";
+			productName = "PullDown-Picture-ToBigUITests";
+			productReference = 2A5E20CC20A57DDB0056DDD5 /* PullDown-Picture-ToBigUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5E20A120A57DDA0056DDD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = ddsc;
+				TargetAttributes = {
+					2A5E20A820A57DDA0056DDD5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					2A5E20C020A57DDB0056DDD5 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2A5E20A820A57DDA0056DDD5;
+					};
+					2A5E20CB20A57DDB0056DDD5 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2A5E20A820A57DDA0056DDD5;
+					};
+				};
+			};
+			buildConfigurationList = 2A5E20A420A57DDA0056DDD5 /* Build configuration list for PBXProject "PullDown-Picture-ToBig" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A5E20A020A57DDA0056DDD5;
+			productRefGroup = 2A5E20AA20A57DDA0056DDD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5E20A820A57DDA0056DDD5 /* PullDown-Picture-ToBig */,
+				2A5E20C020A57DDB0056DDD5 /* PullDown-Picture-ToBigTests */,
+				2A5E20CB20A57DDB0056DDD5 /* PullDown-Picture-ToBigUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5E20A720A57DDA0056DDD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5E20B920A57DDB0056DDD5 /* LaunchScreen.storyboard in Resources */,
+				2A5E20E220A582420056DDD5 /* WechatIMG1.jpeg in Resources */,
+				2A5E20B620A57DDB0056DDD5 /* Assets.xcassets in Resources */,
+				2A5E20B420A57DDA0056DDD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5E20BF20A57DDB0056DDD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5E20CA20A57DDB0056DDD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14E4A39FBDC8C5CB97FC0924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PullDown-Picture-ToBigTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2618B83C8CF451239101A270 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PullDown-Picture-ToBigUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57C2E6DD3D73496A249AA8FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PullDown-Picture-ToBig-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5E20A520A57DDA0056DDD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5E20B120A57DDA0056DDD5 /* ViewController.m in Sources */,
+				2A5E20E020A57F5B0056DDD5 /* TableViewCell.m in Sources */,
+				2A5E20BC20A57DDB0056DDD5 /* main.m in Sources */,
+				2A5E20AE20A57DDA0056DDD5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5E20BD20A57DDB0056DDD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5E20C620A57DDB0056DDD5 /* PullDown_Picture_ToBigTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5E20C820A57DDB0056DDD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5E20D120A57DDB0056DDD5 /* PullDown_Picture_ToBigUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5E20C320A57DDB0056DDD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5E20A820A57DDA0056DDD5 /* PullDown-Picture-ToBig */;
+			targetProxy = 2A5E20C220A57DDB0056DDD5 /* PBXContainerItemProxy */;
+		};
+		2A5E20CE20A57DDB0056DDD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5E20A820A57DDA0056DDD5 /* PullDown-Picture-ToBig */;
+			targetProxy = 2A5E20CD20A57DDB0056DDD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A5E20B220A57DDA0056DDD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5E20B320A57DDA0056DDD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A5E20B720A57DDB0056DDD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5E20B820A57DDB0056DDD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A5E20D320A57DDB0056DDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A5E20D420A57DDB0056DDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A5E20D620A57DDB0056DDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A06F3D901F8FCB833037BE /* Pods-PullDown-Picture-ToBig.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNE57WDG29;
+				INFOPLIST_FILE = "PullDown-Picture-ToBig/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.PullDown-Picture-ToBig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A5E20D720A57DDB0056DDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACE5E09EF01AA1F7595DB54 /* Pods-PullDown-Picture-ToBig.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNE57WDG29;
+				INFOPLIST_FILE = "PullDown-Picture-ToBig/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.PullDown-Picture-ToBig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A5E20D920A57DDB0056DDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D5B161FDD6B39C95449B6C /* Pods-PullDown-Picture-ToBigTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNE57WDG29;
+				INFOPLIST_FILE = "PullDown-Picture-ToBigTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.PullDown-Picture-ToBigTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullDown-Picture-ToBig.app/PullDown-Picture-ToBig";
+			};
+			name = Debug;
+		};
+		2A5E20DA20A57DDB0056DDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52F93C9E178B3003B515C14 /* Pods-PullDown-Picture-ToBigTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNE57WDG29;
+				INFOPLIST_FILE = "PullDown-Picture-ToBigTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.PullDown-Picture-ToBigTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullDown-Picture-ToBig.app/PullDown-Picture-ToBig";
+			};
+			name = Release;
+		};
+		2A5E20DC20A57DDB0056DDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9FA805AAD6ED41D9208590 /* Pods-PullDown-Picture-ToBigUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNE57WDG29;
+				INFOPLIST_FILE = "PullDown-Picture-ToBigUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.PullDown-Picture-ToBigUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PullDown-Picture-ToBig";
+			};
+			name = Debug;
+		};
+		2A5E20DD20A57DDB0056DDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222861FA68FDE8494CBC0F69 /* Pods-PullDown-Picture-ToBigUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNE57WDG29;
+				INFOPLIST_FILE = "PullDown-Picture-ToBigUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.PullDown-Picture-ToBigUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PullDown-Picture-ToBig";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5E20A420A57DDA0056DDD5 /* Build configuration list for PBXProject "PullDown-Picture-ToBig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5E20D320A57DDB0056DDD5 /* Debug */,
+				2A5E20D420A57DDB0056DDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5E20D520A57DDB0056DDD5 /* Build configuration list for PBXNativeTarget "PullDown-Picture-ToBig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5E20D620A57DDB0056DDD5 /* Debug */,
+				2A5E20D720A57DDB0056DDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5E20D820A57DDB0056DDD5 /* Build configuration list for PBXNativeTarget "PullDown-Picture-ToBigTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5E20D920A57DDB0056DDD5 /* Debug */,
+				2A5E20DA20A57DDB0056DDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5E20DB20A57DDB0056DDD5 /* Build configuration list for PBXNativeTarget "PullDown-Picture-ToBigUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5E20DC20A57DDB0056DDD5 /* Debug */,
+				2A5E20DD20A57DDB0056DDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5E20A120A57DDA0056DDD5 /* Project object */;
+}

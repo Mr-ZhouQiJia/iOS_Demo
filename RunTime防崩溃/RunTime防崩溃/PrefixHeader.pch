@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  RunTime防崩溃
+//
+//  Created by ddsc on 2018/6/7.
+//  Copyright © 2018年 ddsc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import"ViewController.h"
+
+#define ABC 10
+
+#endif /* PrefixHeader_pch */
