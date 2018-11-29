@@ -42,8 +42,8 @@ class TopVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             self.tableView?.scrollToRow(at: IndexPath(row: 5, section: 0), at: UITableView.ScrollPosition.bottom, animated: true)
-            
         }
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
