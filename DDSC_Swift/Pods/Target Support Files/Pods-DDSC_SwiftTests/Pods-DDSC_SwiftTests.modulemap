@@ -1,0 +1,6 @@
+framework module Pods_DDSC_SwiftTests {
+  umbrella header "Pods-DDSC_SwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

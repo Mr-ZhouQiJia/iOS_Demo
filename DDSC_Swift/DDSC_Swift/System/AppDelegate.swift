@@ -13,11 +13,39 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print("宽度:\(ZX_WIDTH),高度:\(ZZX_HEIGHT)")
+        
+        let recommendVC     = ZXRecommendViewController()
+        let recommendNavi   = BaseNavigationVC.init(rootViewController: recommendVC)
+        let recommendTabBarItem = UITabBarItem(title: "推荐", image: UIImage(named: "icon_tabbar_recommend_nor"), selectedImage: UIImage(named: "icon_tabbar_recommend_press"))
+        recommendVC.tabBarItem = recommendTabBarItem
+        
+        let projectVC       = ZXProjectViewController()
+        let projectNavi     = BaseNavigationVC.init(rootViewController: projectVC)
+        let projectTabBarItem = UITabBarItem(title: "项目", image:UIImage(named: "icon_tabbar_licai_nor"), selectedImage: UIImage(named: "icon_tabbar_licai_press"))
+        projectVC.tabBarItem = projectTabBarItem
+        
+        let mineVC          = ZXMineViewController()
+        let mineNavi        = BaseNavigationVC.init(rootViewController: mineVC)
+        let mineTabBarItem = UITabBarItem(title: "我的", image: UIImage(named: "icon_tabbar_mycount_nor"), selectedImage: UIImage(named: "icon_tabbar_mycount_press"))
+        mineVC.tabBarItem = mineTabBarItem
+        
+        let moreVC          = ZXMoreViewController()
+        let moreNavi        = BaseNavigationVC.init(rootViewController: moreVC)
+        let moreTabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "icon_tabbar_discover_nor"), selectedImage: UIImage(named: "icon_tabbar_discover_press"))
+        moreVC.tabBarItem = moreTabBarItem
+        
+        let myTab           = BaseTabBarVC()
+        myTab.viewControllers = [recommendNavi,projectNavi,mineNavi,moreNavi]
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = myTab
+        
+        
         
         
         
