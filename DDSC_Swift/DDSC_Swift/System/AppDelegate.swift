@@ -19,31 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         print("宽度:\(ZX_WIDTH),高度:\(ZZX_HEIGHT)")
         
-        let recommendVC     = ZXRecommendViewController()
-        let recommendNavi   = BaseNavigationVC.init(rootViewController: recommendVC)
-        let recommendTabBarItem = UITabBarItem(title: "推荐", image: UIImage(named: "icon_tabbar_recommend_nor"), selectedImage: UIImage(named: "icon_tabbar_recommend_press"))
-        recommendVC.tabBarItem = recommendTabBarItem
-        
-        let projectVC       = ZXProjectViewController()
-        let projectNavi     = BaseNavigationVC.init(rootViewController: projectVC)
-        let projectTabBarItem = UITabBarItem(title: "项目", image:UIImage(named: "icon_tabbar_licai_nor"), selectedImage: UIImage(named: "icon_tabbar_licai_press"))
-        projectVC.tabBarItem = projectTabBarItem
-        
-        let mineVC          = ZXMineViewController()
-        let mineNavi        = BaseNavigationVC.init(rootViewController: mineVC)
-        let mineTabBarItem = UITabBarItem(title: "我的", image: UIImage(named: "icon_tabbar_mycount_nor"), selectedImage: UIImage(named: "icon_tabbar_mycount_press"))
-        mineVC.tabBarItem = mineTabBarItem
-        
-        let moreVC          = ZXMoreViewController()
-        let moreNavi        = BaseNavigationVC.init(rootViewController: moreVC)
-        let moreTabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "icon_tabbar_discover_nor"), selectedImage: UIImage(named: "icon_tabbar_discover_press"))
-        moreVC.tabBarItem = moreTabBarItem
-        
-        let myTab           = BaseTabBarVC()
-        myTab.viewControllers = [recommendNavi,projectNavi,mineNavi,moreNavi]
-        
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = myTab
+        //创建tabbar
+        self.createTabbar()
         
         
         
@@ -55,26 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -97,53 +55,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
     }
-
-    // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "DDSC_Swift")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-
-    // MARK: - Core Data Saving support
-
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
-    }
-
 }
 
+extension AppDelegate {
+    func createTabbar() {
+        
+        let recommendVC     = ZXRecommendViewController()
+        let recommendNavi   = BaseNavigationVC.init(rootViewController: recommendVC)
+        let recommendTabBarItem = UITabBarItem(title: "推荐", image: UIImage(named: "icon_tabbar_recommend_nor"), selectedImage: UIImage(named: "icon_tabbar_recommend_press")?.withRenderingMode(.alwaysOriginal) )
+        recommendVC.tabBarItem = recommendTabBarItem
+        
+        let projectVC       = ZXProjectViewController()
+        let projectNavi     = BaseNavigationVC.init(rootViewController: projectVC)
+        let projectTabBarItem = UITabBarItem(title: "项目", image:UIImage(named: "icon_tabbar_licai_nor"), selectedImage: UIImage(named: "icon_tabbar_licai_press"))
+        projectVC.tabBarItem = projectTabBarItem
+        
+        let mineVC          = ZXMineViewController()
+        let mineNavi        = BaseNavigationVC.init(rootViewController: mineVC)
+        let mineTabBarItem = UITabBarItem(title: "我的", image: UIImage(named: "icon_tabbar_mycount_nor"), selectedImage: UIImage(named: "icon_tabbar_mycount_press"))
+        mineVC.tabBarItem = mineTabBarItem
+        
+        let moreVC          = ZXMoreViewController()
+        let moreNavi        = BaseNavigationVC.init(rootViewController: moreVC)
+        let moreTabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "icon_tabbar_discover_nor"), selectedImage: UIImage(named: "icon_tabbar_discover_press"))
+        moreVC.tabBarItem = moreTabBarItem
+        
+        let myTab           = BaseTabBarVC()
+        myTab.viewControllers = [recommendNavi,projectNavi,mineNavi,moreNavi]
+        let textAttributes = [NSAttributedString.Key.foregroundColor : UIColor.orange]
+        let normalAttributes =  [NSAttributedString.Key.foregroundColor : UIColor.gray]
+        recommendVC.tabBarItem.setTitleTextAttributes(textAttributes, for: UIControl.State.selected)
+        recommendVC.tabBarItem.setTitleTextAttributes(normalAttributes, for: .normal)
+        projectVC.tabBarItem.setTitleTextAttributes(textAttributes, for: UIControl.State.selected)
+        projectVC.tabBarItem.setTitleTextAttributes(normalAttributes, for: .normal)
+        mineVC.tabBarItem.setTitleTextAttributes(textAttributes, for: UIControl.State.selected)
+        mineVC.tabBarItem.setTitleTextAttributes(normalAttributes, for: .normal)
+        moreVC.tabBarItem.setTitleTextAttributes(textAttributes, for: UIControl.State.selected)
+        moreVC.tabBarItem.setTitleTextAttributes(normalAttributes, for: .normal)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = myTab
+    }
+}

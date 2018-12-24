@@ -10,10 +10,23 @@ import UIKit
 
 class BaseTabBarVC: UITabBarController {
 
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nil, bundle: nil)
+        let selectedAttributes:Dictionary = [NSAttributedString.Key.foregroundColor : UIColor.red ]
+        
+        self.tabBarItem.setTitleTextAttributes(selectedAttributes, for:.selected)
+        let normalAttributes = [NSAttributedString.Key.foregroundColor : UIColor.yellow]
+        self.tabBarItem.setTitleTextAttributes(normalAttributes, for: .normal)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
     
 

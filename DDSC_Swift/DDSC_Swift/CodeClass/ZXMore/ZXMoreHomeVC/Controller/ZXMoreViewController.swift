@@ -7,36 +7,63 @@
 //
 
 import UIKit
-
+import Alamofire
 class ZXMoreViewController: BaseViewController , UITableViewDelegate,UITableViewDataSource {
     var tableView : UITableView?
     
-    
+    func requestData() {
+        
+        ZXNetworkingManager.sharedNetworkManager.getRequest(url: "https://news-at.zhihu.com/api/4/news/before/20181110", params: [:], success: { (data) in
+            print(data)
+        }) { (error) in
+            print(error)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.buildNavi()
         self.buildTableView()
+        self.requestData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
+        return 1 + 1 + 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
         case 0:
-            return 1
+            return 140
         case 1:
-            return 1
+            return 150
         default:
-            return 10
+            return 90
         }
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath)
-        return cell
+        
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! ZXMoreHomeHeadersCell
+            
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "secondCell", for: indexPath) as! ZXMoreHomeSecondCell
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! ZXMoreHomeNewsCell
+            
+            return cell
+        }
+        
     }
     
 }
@@ -66,11 +93,13 @@ extension ZXMoreViewController{
     }
     
     func buildTableView() {
-        self.tableView = UITableView(frame: CGRect(x: 0, y: 0, width: ZX_WIDTH, height: ZZX_HEIGHT), style: .grouped)
+        self.tableView = UITableView(frame: CGRect(x: 0, y: 0, width: ZX_WIDTH, height: ZZX_HEIGHT), style: .plain)
         self.view.addSubview(self.tableView!)
-        self.tableView?.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "newsCell")
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
+        self.tableView?.register(ZXMoreHomeNewsCell.classForCoder() , forCellReuseIdentifier: "newsCell")
+        self.tableView?.register(ZXMoreHomeHeadersCell.classForCoder(), forCellReuseIdentifier: "headerCell")
+        self.tableView?.register(ZXMoreHomeSecondCell.classForCoder(), forCellReuseIdentifier: "secondCell")
     }
     
     
