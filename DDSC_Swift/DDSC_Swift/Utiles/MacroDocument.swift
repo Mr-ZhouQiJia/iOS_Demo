@@ -11,7 +11,7 @@ import UIKit
 import SnapKit
 import Alamofire
 import SwiftyJSON
-
+import Kingfisher
 
 
 let ZX_WIDTH = UIScreen.main.bounds.size.width

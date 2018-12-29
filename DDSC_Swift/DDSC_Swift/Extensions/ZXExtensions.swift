@@ -37,3 +37,12 @@ extension UIColor {
     }
   
 }
+
+extension UIImage {
+    
+    func scaleImage(scaleSize : CGFloat) -> UIImage {
+        let size = CGSize(width: self.size.width * scaleSize, height: self.size.height * scaleSize)
+        return self
+    }
+    
+}
