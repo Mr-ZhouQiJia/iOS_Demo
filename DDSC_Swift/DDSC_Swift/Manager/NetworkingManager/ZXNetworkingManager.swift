@@ -80,8 +80,19 @@ class ZXNetworkingManager: NSObject {
             case .success(let value) :
                 success(value as! [String : AnyObject])
             case .failure(let error):
-                faliure(error )
+                faliure(error)
                 
+            }
+        }
+    }
+    
+    func postRequest(url: String , params : [String:Any]?, success: @escaping(_ responObject : [String : AnyObject]) -> () , faliure : @escaping(_ error : Error) -> ()) {
+        Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.httpBody, headers: nil).responseJSON { (response) in
+            switch response.result{
+            case .success(let value) :
+                success(value as! [String : AnyObject])
+            case .failure(let error):
+                faliure(error)
             }
         }
     }
