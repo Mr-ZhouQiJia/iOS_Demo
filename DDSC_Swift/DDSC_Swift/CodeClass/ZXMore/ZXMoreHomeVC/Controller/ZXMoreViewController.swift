@@ -10,10 +10,16 @@ import UIKit
 import Alamofire
 class ZXMoreViewController: BaseViewController , UITableViewDelegate,UITableViewDataSource {
     var tableView : UITableView?
+    let kPageNewsSize = "20"
     
     func requestData() {
         
-        ZXNetworkingManager.sharedNetworkManager.getRequest(url: "https://news-at.zhihu.com/api/4/news/before/20181110", params: [:], success: { (data) in
+        let params = ["confKey":"DISCOVER_HEAD",
+                      "packetName":kDDPacketName,
+                      "requestPage":"1",
+                      "pageSize":kPageNewsSize]
+        
+        ZXNetworkingManager.sharedNetworkManager.getRequest(url: "page/findpage/gateway-nonessential-c", params: params, success: { (data) in
             print(data)
         }) { (error) in
             print(error)
@@ -25,6 +31,7 @@ class ZXMoreViewController: BaseViewController , UITableViewDelegate,UITableView
         self.buildNavi()
         self.buildTableView()
         self.requestData()
+        self.jz_navigationBarBackgroundAlpha = 0.0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

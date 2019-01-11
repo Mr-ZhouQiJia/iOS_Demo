@@ -46,3 +46,15 @@ extension UIImage {
     }
     
 }
+
+extension UIView {
+    
+    func x() -> CGFloat{
+        return self.frame.origin.x
+    }
+    
+    func y() -> CGFloat{
+        return self.frame.origin.y
+    }
+    
+}

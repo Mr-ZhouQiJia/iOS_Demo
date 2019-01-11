@@ -13,6 +13,9 @@
 		2A071C1B21BE4AF5006FE188 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A071C1A21BE4AF5006FE188 /* SwiftyJSON.framework */; };
 		2A55E1A521B6252C000D76A6 /* ZXNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E1A421B6252C000D76A6 /* ZXNetworkingManager.swift */; };
 		2A55E1A721B632D4000D76A6 /* ZXAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E1A621B632D4000D76A6 /* ZXAPIConstant.swift */; };
+		2A9E57D721E4810500B26811 /* ZXUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E57D621E4810500B26811 /* ZXUtils.swift */; };
+		2A9E57D921E59BB600B26811 /* ZXMyAccountSlideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E57D821E59BB600B26811 /* ZXMyAccountSlideVC.swift */; };
+		2A9E57DF21E5A30C00B26811 /* ZXMyAccountLeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E57DE21E5A30C00B26811 /* ZXMyAccountLeftVC.swift */; };
 		2ABD577D21C798D100D705FB /* ZXMoreHomeHeadersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD577C21C798D100D705FB /* ZXMoreHomeHeadersCell.swift */; };
 		2ABD577F21C89F8000D705FB /* ZXMoreHomeSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD577E21C89F8000D705FB /* ZXMoreHomeSecondCell.swift */; };
 		2ABD578121C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD578021C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift */; };
@@ -284,6 +287,9 @@
 		2A071C1D21BE5D03006FE188 /* ZX-Bridge-ObjectC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZX-Bridge-ObjectC.h"; sourceTree = "<group>"; };
 		2A55E1A421B6252C000D76A6 /* ZXNetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXNetworkingManager.swift; sourceTree = "<group>"; };
 		2A55E1A621B632D4000D76A6 /* ZXAPIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXAPIConstant.swift; sourceTree = "<group>"; };
+		2A9E57D621E4810500B26811 /* ZXUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXUtils.swift; sourceTree = "<group>"; };
+		2A9E57D821E59BB600B26811 /* ZXMyAccountSlideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountSlideVC.swift; sourceTree = "<group>"; };
+		2A9E57DE21E5A30C00B26811 /* ZXMyAccountLeftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountLeftVC.swift; sourceTree = "<group>"; };
 		2ABD577C21C798D100D705FB /* ZXMoreHomeHeadersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMoreHomeHeadersCell.swift; sourceTree = "<group>"; };
 		2ABD577E21C89F8000D705FB /* ZXMoreHomeSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMoreHomeSecondCell.swift; sourceTree = "<group>"; };
 		2ABD578021C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXSpecialCycleScrollView.swift; sourceTree = "<group>"; };
@@ -586,6 +592,38 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		2A9E57DA21E5A0AD00B26811 /* ZXMyAccountLeftVC */ = {
+			isa = PBXGroup;
+			children = (
+				2A9E57DC21E5A0BC00B26811 /* Controller */,
+				2A9E57DD21E5A0BC00B26811 /* Model */,
+				2A9E57DB21E5A0BC00B26811 /* View */,
+			);
+			path = ZXMyAccountLeftVC;
+			sourceTree = "<group>";
+		};
+		2A9E57DB21E5A0BC00B26811 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A9E57DC21E5A0BC00B26811 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A9E57DE21E5A30C00B26811 /* ZXMyAccountLeftVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A9E57DD21E5A0BC00B26811 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2ADD781A21AE3E6A00F6E6D2 = {
 			isa = PBXGroup;
 			children = (
@@ -783,6 +821,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADD785C21AE707300F6E6D2 /* MacroDocument.swift */,
+				2A9E57D621E4810500B26811 /* ZXUtils.swift */,
 			);
 			path = Utiles;
 			sourceTree = "<group>";
@@ -818,7 +857,9 @@
 		2ADD786921AF94D100F6E6D2 /* ZXMine */ = {
 			isa = PBXGroup;
 			children = (
+				2A9E57D821E59BB600B26811 /* ZXMyAccountSlideVC.swift */,
 				2ADD786D21AF955900F6E6D2 /* ZXMineViewController.swift */,
+				2A9E57DA21E5A0AD00B26811 /* ZXMyAccountLeftVC */,
 			);
 			path = ZXMine;
 			sourceTree = "<group>";
@@ -1421,7 +1462,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DDSC_Swift/Pods-DDSC_Swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JZNavigationExtension/JZNavigationExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -1429,7 +1472,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JZNavigationExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -1486,6 +1531,7 @@
 				2ADD787221AF993400F6E6D2 /* BaseNavigationVC.swift in Sources */,
 				2ADD786C21AF954900F6E6D2 /* ZXProjectViewController.swift in Sources */,
 				2ABD577F21C89F8000D705FB /* ZXMoreHomeSecondCell.swift in Sources */,
+				2A9E57D921E59BB600B26811 /* ZXMyAccountSlideVC.swift in Sources */,
 				2ADD786421AE810200F6E6D2 /* BaseTabBarVC.swift in Sources */,
 				2ADD7A0921B1343C00F6E6D2 /* BaseTableViewCell.swift in Sources */,
 				2ADD782921AE3E6B00F6E6D2 /* ViewController.swift in Sources */,
@@ -1495,11 +1541,13 @@
 				2ABD578121C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift in Sources */,
 				2A55E1A521B6252C000D76A6 /* ZXNetworkingManager.swift in Sources */,
 				2ABD577D21C798D100D705FB /* ZXMoreHomeHeadersCell.swift in Sources */,
+				2A9E57DF21E5A30C00B26811 /* ZXMyAccountLeftVC.swift in Sources */,
 				2A55E1A721B632D4000D76A6 /* ZXAPIConstant.swift in Sources */,
 				2ADD786721AF944500F6E6D2 /* ZXRecommendViewController.swift in Sources */,
 				2ADD785D21AE707300F6E6D2 /* MacroDocument.swift in Sources */,
 				2ADD786221AE802D00F6E6D2 /* BaseViewController.swift in Sources */,
 				2ADD7A0B21B134AE00F6E6D2 /* ZXMoreHomeNewsCell.swift in Sources */,
+				2A9E57D721E4810500B26811 /* ZXUtils.swift in Sources */,
 				2ADD787521AFC31700F6E6D2 /* ZXExtensions.swift in Sources */,
 				2ADD786E21AF955900F6E6D2 /* ZXMineViewController.swift in Sources */,
 			);
@@ -1681,10 +1729,7 @@
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = "$(SRCROOT)/DDSC_Swift/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ddsc/Desktop/iOS_Demo/DDSC_Swift/DDSC_Swift/System/ZX-Bridge-ObjectC.h";
@@ -1703,10 +1748,7 @@
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = "$(SRCROOT)/DDSC_Swift/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ddsc/Desktop/iOS_Demo/DDSC_Swift/DDSC_Swift/System/ZX-Bridge-ObjectC.h";
@@ -1725,11 +1767,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1747,11 +1785,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1768,11 +1802,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1789,11 +1819,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

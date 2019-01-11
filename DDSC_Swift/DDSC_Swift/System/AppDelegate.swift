@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import Alamofire
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,22 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print("宽度:\(ZX_WIDTH),高度:\(ZZX_HEIGHT)")
+        print("宽度:\(ZX_WIDTH),高度:\(ZZX_HEIGHT) \(DD_MESSAGE_LIST)")
         
         //创建tabbar
         self.createTabbar()
         
-        
-        
-        
-        
-        
-        
+    
         
         return true
     }
 
- 
+    
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -71,7 +66,7 @@ extension AppDelegate {
         let projectTabBarItem = UITabBarItem(title: "项目", image:UIImage(named: "icon_tabbar_licai_nor"), selectedImage: UIImage(named: "icon_tabbar_licai_press"))
         projectVC.tabBarItem = projectTabBarItem
         
-        let mineVC          = ZXMineViewController()
+        let mineVC          = ZXMyAccountSlideVC()
         let mineNavi        = BaseNavigationVC.init(rootViewController: mineVC)
         let mineTabBarItem = UITabBarItem(title: "我的", image: UIImage(named: "icon_tabbar_mycount_nor"), selectedImage: UIImage(named: "icon_tabbar_mycount_press"))
         mineVC.tabBarItem = mineTabBarItem
