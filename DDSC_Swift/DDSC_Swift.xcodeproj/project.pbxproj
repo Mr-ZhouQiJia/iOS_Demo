@@ -13,6 +13,10 @@
 		2A071C1B21BE4AF5006FE188 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A071C1A21BE4AF5006FE188 /* SwiftyJSON.framework */; };
 		2A55E1A521B6252C000D76A6 /* ZXNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E1A421B6252C000D76A6 /* ZXNetworkingManager.swift */; };
 		2A55E1A721B632D4000D76A6 /* ZXAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E1A621B632D4000D76A6 /* ZXAPIConstant.swift */; };
+		2A8B444821EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B444621EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift */; };
+		2A8B444921EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B444721EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib */; };
+		2A8B444B21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B444A21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift */; };
+		2A8B444D21F1BEE90040EBD9 /* MyAccountLeftHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B444C21F1BEE90040EBD9 /* MyAccountLeftHeaderView.xib */; };
 		2A9E57D721E4810500B26811 /* ZXUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E57D621E4810500B26811 /* ZXUtils.swift */; };
 		2A9E57D921E59BB600B26811 /* ZXMyAccountSlideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E57D821E59BB600B26811 /* ZXMyAccountSlideVC.swift */; };
 		2A9E57DF21E5A30C00B26811 /* ZXMyAccountLeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E57DE21E5A30C00B26811 /* ZXMyAccountLeftVC.swift */; };
@@ -287,6 +291,10 @@
 		2A071C1D21BE5D03006FE188 /* ZX-Bridge-ObjectC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZX-Bridge-ObjectC.h"; sourceTree = "<group>"; };
 		2A55E1A421B6252C000D76A6 /* ZXNetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXNetworkingManager.swift; sourceTree = "<group>"; };
 		2A55E1A621B632D4000D76A6 /* ZXAPIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXAPIConstant.swift; sourceTree = "<group>"; };
+		2A8B444621EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountLeftCell.swift; sourceTree = "<group>"; };
+		2A8B444721EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZXMyAccountLeftCell.xib; sourceTree = "<group>"; };
+		2A8B444A21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountLeftHeaderView.swift; sourceTree = "<group>"; };
+		2A8B444C21F1BEE90040EBD9 /* MyAccountLeftHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountLeftHeaderView.xib; sourceTree = "<group>"; };
 		2A9E57D621E4810500B26811 /* ZXUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXUtils.swift; sourceTree = "<group>"; };
 		2A9E57D821E59BB600B26811 /* ZXMyAccountSlideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountSlideVC.swift; sourceTree = "<group>"; };
 		2A9E57DE21E5A30C00B26811 /* ZXMyAccountLeftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountLeftVC.swift; sourceTree = "<group>"; };
@@ -605,6 +613,10 @@
 		2A9E57DB21E5A0BC00B26811 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A8B444621EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift */,
+				2A8B444721EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib */,
+				2A8B444A21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift */,
+				2A8B444C21F1BEE90040EBD9 /* MyAccountLeftHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1407,8 +1419,10 @@
 				2ADD794E21B10B3700F6E6D2 /* 736_2@3x.jpg in Resources */,
 				2ADD797321B10B3700F6E6D2 /* icon_periods.png in Resources */,
 				2ADD79F121B10B3700F6E6D2 /* pic_shake_hand_wave@2x.png in Resources */,
+				2A8B444D21F1BEE90040EBD9 /* MyAccountLeftHeaderView.xib in Resources */,
 				2ADD79D121B10B3700F6E6D2 /* 轮播背景.png in Resources */,
 				2ADD79FB21B10B3700F6E6D2 /* icon_shezhi_shenfenzheng_logo@2x.png in Resources */,
+				2A8B444921EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib in Resources */,
 				2ADD79AC21B10B3700F6E6D2 /* btn_arrow_left_nor@2x.png in Resources */,
 				2ADD79BC21B10B3700F6E6D2 /* inputbox_gray@2x.png in Resources */,
 				2ADD796E21B10B3700F6E6D2 /* btn_arrow_right_nor@2x.png in Resources */,
@@ -1531,6 +1545,7 @@
 				2ADD787221AF993400F6E6D2 /* BaseNavigationVC.swift in Sources */,
 				2ADD786C21AF954900F6E6D2 /* ZXProjectViewController.swift in Sources */,
 				2ABD577F21C89F8000D705FB /* ZXMoreHomeSecondCell.swift in Sources */,
+				2A8B444821EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift in Sources */,
 				2A9E57D921E59BB600B26811 /* ZXMyAccountSlideVC.swift in Sources */,
 				2ADD786421AE810200F6E6D2 /* BaseTabBarVC.swift in Sources */,
 				2ADD7A0921B1343C00F6E6D2 /* BaseTableViewCell.swift in Sources */,
@@ -1545,6 +1560,7 @@
 				2A55E1A721B632D4000D76A6 /* ZXAPIConstant.swift in Sources */,
 				2ADD786721AF944500F6E6D2 /* ZXRecommendViewController.swift in Sources */,
 				2ADD785D21AE707300F6E6D2 /* MacroDocument.swift in Sources */,
+				2A8B444B21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift in Sources */,
 				2ADD786221AE802D00F6E6D2 /* BaseViewController.swift in Sources */,
 				2ADD7A0B21B134AE00F6E6D2 /* ZXMoreHomeNewsCell.swift in Sources */,
 				2A9E57D721E4810500B26811 /* ZXUtils.swift in Sources */,
@@ -1728,8 +1744,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = "$(SRCROOT)/DDSC_Swift/System/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ddsc/Desktop/iOS_Demo/DDSC_Swift/DDSC_Swift/System/ZX-Bridge-ObjectC.h";
@@ -1747,8 +1766,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = "$(SRCROOT)/DDSC_Swift/System/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ddsc/Desktop/iOS_Demo/DDSC_Swift/DDSC_Swift/System/ZX-Bridge-ObjectC.h";
@@ -1767,7 +1789,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1785,7 +1811,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1802,7 +1832,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1819,7 +1853,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = DDSC_SwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

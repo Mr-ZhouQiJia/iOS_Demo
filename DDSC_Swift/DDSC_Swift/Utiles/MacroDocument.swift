@@ -14,8 +14,8 @@ import SwiftyJSON
 import Kingfisher
 
 
-let ZX_WIDTH = UIScreen.main.bounds.size.width
-let ZZX_HEIGHT = UIScreen.main.bounds.size.height
+let ZX_WIDTH : CGFloat = UIScreen.main.bounds.size.width
+let ZZX_HEIGHT : CGFloat = UIScreen.main.bounds.size.height
 
 let kDDPacketName = "ddsoucai"
 let USER_COOKIE_KEY = "userCookieKey"   //用户cookie

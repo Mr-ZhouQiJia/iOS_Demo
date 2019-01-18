@@ -11,13 +11,16 @@ import UIKit
 let kSlideWidth : CGFloat = UIScreen.main.bounds.size.width * 0.8
 let Distance : CGFloat = 80.0
 let Duration : CGFloat = 0.3
-let scale    : CGFloat = ZX_WIDTH * 0.8 - Distance / ZX_WIDTH * 0.8
+let scale    : CGFloat = (ZX_WIDTH * 0.8 - Distance) / (ZX_WIDTH * 0.8)
 class ZXMyAccountSlideVC: BaseViewController {
 
     var myAccountMainVC : ZXMineViewController?
     var myAccountLeftVC : ZXMyAccountLeftVC?
     var totalPanGesture : UIPanGestureRecognizer?
     var mainNavi        : UINavigationController?
+    var mainButton      : UIButton?
+    var tabMainButton   : UIButton?
+    
     
     
     
@@ -66,7 +69,7 @@ extension ZXMyAccountSlideVC : UIGestureRecognizerDelegate {
         let mainView = self.mainNavi?.view
         let leftView = self.myAccountLeftVC?.view
         
-        let x = sender.location(in: self.view).x                 //取得滑动的距离
+        let x = sender.translation(in: self.view).x              //获取手指在屏幕上X轴的移动距离
         sender.setTranslation(CGPoint.zero, in: self.view)       //重置手势的位置
         
         var rightSlide : Bool = false
@@ -106,9 +109,7 @@ extension ZXMyAccountSlideVC : UIGestureRecognizerDelegate {
             return
         }
         
-        
     }
-    
     
     //
     func finalPositionWithRightSlide(rightSlide : Bool, mainView : UIView,leftView : UIView) {
@@ -125,20 +126,45 @@ extension ZXMyAccountSlideVC : UIGestureRecognizerDelegate {
     func showLeftView() {
         UIView.animate(withDuration: TimeInterval(Duration)) {
             self.mainNavi!.view.frame.origin.x = kSlideWidth
-            self.myAccountLeftVC?.view.frame.origin.x = 0
-            
+            self.myAccountLeftVC!.view.frame.origin.x = 0
+            self.tabBarController?.tabBar.frame.origin.x = kSlideWidth
+            if !(self.totalPanGesture != nil) || !(self.myAccountMainVC != nil) || !(self.myAccountLeftVC != nil) {
+                self.addBackButton()
+            }
         }
     }
 
     //
-    func showMainView() {
+    @objc func showMainView() {
         UIView.animate(withDuration: TimeInterval(Duration)) {
             self.mainNavi?.view.frame.origin.x = 0
             self.myAccountLeftVC?.view.frame.origin.x = -kSlideWidth + Distance
             self.tabBarController?.tabBar.frame.origin.x = 0
-            
+            if (self.mainButton != nil) || self.tabMainButton != nil || self.totalPanGesture != nil {
+                self.view.removeGestureRecognizer(self.totalPanGesture!)
+                self.mainButton?.removeFromSuperview()
+                self.tabMainButton?.removeFromSuperview()
+                self.totalPanGesture = nil
+                self.mainButton = nil
+                self.tabMainButton = nil
+            }
         }
     }
+    
+    //MARK: 添加全屏返回按钮
+    func addBackButton() {
+        self.mainButton = UIButton.init(frame:CGRect(x: 0, y: 0, width: ZX_WIDTH, height: ZZX_HEIGHT))
+        self.mainButton?.addTarget(self, action: #selector(showMainView), for: .touchUpInside)
+        self.myAccountMainVC?.navigationController?.view.addSubview(self.mainButton!)
+        
+        self.tabMainButton = UIButton(frame: CGRect(x: 0, y: 0, width: ZX_WIDTH, height: 100))
+        self.tabMainButton?.addTarget(self, action: #selector(showMainView), for: .touchUpInside)
+        self.tabBarController?.tabBar.addSubview(self.tabMainButton!)
+        
+        self.totalPanGesture = UIPanGestureRecognizer(target: self, action: #selector(panGesterHandle(sender:)))
+        self.view.addGestureRecognizer(self.totalPanGesture!)
+    }
+    
     
     //MARK: UIGestureRecognizerDelegate
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
@@ -146,20 +172,15 @@ extension ZXMyAccountSlideVC : UIGestureRecognizerDelegate {
         if self.mainNavi!.topViewController!.isKind(of: ZXMineViewController.classForCoder()) {
             let x = gestureRecognizer.location(in: self.view).x
             print(x)
-            if x <= ZX_WIDTH * 0.5 {
+            if x <= ZX_WIDTH * 0.2 {
                 print("begin")
                  return true
             }else {
                 print("notBegin")
                 return false
             }
+            return true
         }
         return false
     }
-    
-    
-    
-    
-    
-    
 }
