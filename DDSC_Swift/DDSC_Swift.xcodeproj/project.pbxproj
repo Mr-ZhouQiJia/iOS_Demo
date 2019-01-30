@@ -23,6 +23,8 @@
 		2ABD577D21C798D100D705FB /* ZXMoreHomeHeadersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD577C21C798D100D705FB /* ZXMoreHomeHeadersCell.swift */; };
 		2ABD577F21C89F8000D705FB /* ZXMoreHomeSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD577E21C89F8000D705FB /* ZXMoreHomeSecondCell.swift */; };
 		2ABD578121C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD578021C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift */; };
+		2AD0225C21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD0225B21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift */; };
+		2AD0225E21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD0225D21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib */; };
 		2ADD782721AE3E6A00F6E6D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD782621AE3E6A00F6E6D2 /* AppDelegate.swift */; };
 		2ADD782921AE3E6B00F6E6D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD782821AE3E6A00F6E6D2 /* ViewController.swift */; };
 		2ADD782C21AE3E6B00F6E6D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD782A21AE3E6B00F6E6D2 /* Main.storyboard */; };
@@ -301,6 +303,8 @@
 		2ABD577C21C798D100D705FB /* ZXMoreHomeHeadersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMoreHomeHeadersCell.swift; sourceTree = "<group>"; };
 		2ABD577E21C89F8000D705FB /* ZXMoreHomeSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMoreHomeSecondCell.swift; sourceTree = "<group>"; };
 		2ABD578021C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXSpecialCycleScrollView.swift; sourceTree = "<group>"; };
+		2AD0225B21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountLeftFooterView.swift; sourceTree = "<group>"; };
+		2AD0225D21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZXMyAccountLeftFooterView.xib; sourceTree = "<group>"; };
 		2ADD782321AE3E6A00F6E6D2 /* DDSC_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDSC_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD782621AE3E6A00F6E6D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADD782821AE3E6A00F6E6D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -617,6 +621,8 @@
 				2A8B444721EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib */,
 				2A8B444A21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift */,
 				2A8B444C21F1BEE90040EBD9 /* MyAccountLeftHeaderView.xib */,
+				2AD0225B21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift */,
+				2AD0225D21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1371,6 +1377,7 @@
 				2ADD794F21B10B3700F6E6D2 /* 568_4@2x.jpg in Resources */,
 				2ADD798221B10B3700F6E6D2 /* pic_zhalan_pingpu_bg_press@2x.png in Resources */,
 				2ADD79A821B10B3700F6E6D2 /* icon_award@2x.png in Resources */,
+				2AD0225E21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib in Resources */,
 				2ADD796621B10B3700F6E6D2 /* bg_grid_shoushiyindao@2x.png in Resources */,
 				2ADD79A421B10B3700F6E6D2 /* icon_countdown@2x.png in Resources */,
 				2ADD79EF21B10B3700F6E6D2 /* icon_shake_up@2x.png in Resources */,
@@ -1565,6 +1572,7 @@
 				2ADD7A0B21B134AE00F6E6D2 /* ZXMoreHomeNewsCell.swift in Sources */,
 				2A9E57D721E4810500B26811 /* ZXUtils.swift in Sources */,
 				2ADD787521AFC31700F6E6D2 /* ZXExtensions.swift in Sources */,
+				2AD0225C21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift in Sources */,
 				2ADD786E21AF955900F6E6D2 /* ZXMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1741,6 +1749,7 @@
 			baseConfigurationReference = 6A32830066B05691EEDD7114 /* Pods-DDSC_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = "$(SRCROOT)/DDSC_Swift/System/Info.plist";
@@ -1751,6 +1760,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ddsc/Desktop/iOS_Demo/DDSC_Swift/DDSC_Swift/System/ZX-Bridge-ObjectC.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1763,6 +1773,7 @@
 			baseConfigurationReference = EDA3CA9FCCBB8CF27098D1B8 /* Pods-DDSC_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MNE57WDG29;
 				INFOPLIST_FILE = "$(SRCROOT)/DDSC_Swift/System/Info.plist";
@@ -1773,6 +1784,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddsc.DDSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ddsc/Desktop/iOS_Demo/DDSC_Swift/DDSC_Swift/System/ZX-Bridge-ObjectC.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

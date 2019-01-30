@@ -19,7 +19,7 @@ class ZXMyAccountLeftVC: BaseViewController,UITableViewDelegate,UITableViewDataS
     var cellData  : Array<NSDictionary>?
     override func viewDidLoad() {
         super.viewDidLoad()
-       // self.view.backgroundColor = UIColor.yellow
+        self.view.backgroundColor = UIColor.color(hexString: "e1e6e9")
         buildTableView()
         cellData = [["title" : "银行卡","imageName" : "icon_mycount_setting_card"],
                     ["title" : "密码设置","imageName": "icon_mycount_setting_key"],
@@ -34,12 +34,19 @@ class ZXMyAccountLeftVC: BaseViewController,UITableViewDelegate,UITableViewDataS
 extension ZXMyAccountLeftVC{
     
     func buildTableView() {
-        self.tableView = UITableView(frame: CGRect(x: 0, y: kHeaderHeight, width: ZX_WIDTH * 0.8, height: ZZX_HEIGHT - kHeaderHeight), style: .plain)
-        self.tableView?.backgroundColor = UIColor.green
+        self.tableView = UITableView(frame: CGRect(x: 0, y: -44, width: ZX_WIDTH * 0.8, height: ZZX_HEIGHT + 44), style: .plain)
+        self.tableView?.isScrollEnabled = false
+        self.tableView?.backgroundColor = UIColor.color(hexString: "e1e6e9")
         self.view.addSubview(self.tableView!)
         self.tableView?.register(UINib.init(nibName: "ZXMyAccountLeftCell", bundle: nil), forCellReuseIdentifier: "ZXMyAccountLeftCell")
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
+        
+        let headerView = Bundle.main.loadNibNamed("MyAccountLeftHeaderView", owner: nil, options: nil)?.last
+        self.tableView?.tableHeaderView = headerView as? UIView
+        
+        let footerView = Bundle.main.loadNibNamed("ZXMyAccountLeftFooterView", owner: nil, options: nil)?.last
+        self.tableView?.tableFooterView = footerView as? UIView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

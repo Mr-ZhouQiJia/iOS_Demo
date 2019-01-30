@@ -9,22 +9,29 @@
 import UIKit
 
 class ZXMineViewController: BaseViewController {
-
+    var propagandaView : UIView?
+    var propagandaViewBgView : UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.red
-        // Do any additional setup after loading the view.
+        presentPropagandaView()
     }
     
 
-    /*
-    // MARK: - Navigation
+    
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ZXMineViewController {
+    func presentPropagandaView() {
+        self.propagandaView = UIView(frame: CGRect(x: 0, y: 0, width: ZX_WIDTH, height: ZZX_HEIGHT - 48))
+        self.propagandaView?.alpha = 0.6
+        self.propagandaView?.backgroundColor = UIColor.black
+        self.view.addSubview(self.propagandaView!)
+        
+        self.propagandaViewBgView = UIView(frame: CGRect(x: 15, y: ZZX_HEIGHT - 34 - 289, width: ZX_WIDTH - 30, height: 200))
+        self.propagandaViewBgView?.backgroundColor = UIColor.orange
+        self.propagandaView?.addSubview(self.propagandaViewBgView!)
+        
     }
-    */
-
 }

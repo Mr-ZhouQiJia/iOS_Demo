@@ -21,6 +21,7 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx7-La-dhq">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                            <color key="backgroundColor" red="0.34569245576858521" green="0.38737368583679199" blue="0.40357178449630737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2GW-Dj-woc">
                             <rect key="frame" x="130" y="50" width="60" height="60"/>
@@ -29,29 +30,57 @@
                                 <constraint firstAttribute="width" constant="60" id="zBi-P9-0Gb"/>
                             </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEG-y4-PB5">
-                            <rect key="frame" x="187" y="69" width="47" height="22"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_pingce" translatesAutoresizingMaskIntoConstraints="NO" id="r6y-ZL-YtH">
+                            <rect key="frame" x="185" y="69.5" width="47" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="47" id="1xz-2F-ypk"/>
-                                <constraint firstAttribute="height" constant="22" id="bCj-jN-uxv"/>
+                                <constraint firstAttribute="height" constant="21" id="BAh-MQ-C5D"/>
+                                <constraint firstAttribute="width" constant="47" id="mXk-Yo-6bq"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQe-xg-sx8">
+                            <rect key="frame" x="185" y="60" width="47" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="kGo-W9-0S5"/>
+                                <constraint firstAttribute="width" constant="47" id="sQj-9v-xPb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <state key="normal" title="未评测">
                                 <color key="titleColor" red="0.64313725489999995" green="0.63902216629999997" blue="0.64152658709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLT-OU-64d">
+                            <rect key="frame" x="104" y="175" width="112" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="08f-dv-s0h"/>
+                                <constraint firstAttribute="width" constant="112" id="5YA-RH-yaN"/>
+                            </constraints>
+                            <state key="normal" title="Button" backgroundImage="bg_diandianzhanghu_dengjixinxi_nor"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWT-yt-dmm">
+                            <rect key="frame" x="139" y="141" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.34569245576858521" green="0.38737368583679199" blue="0.40357178449630737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="nx7-La-dhq" secondAttribute="bottom" id="2BG-Cl-GhB"/>
+                        <constraint firstItem="yLT-OU-64d" firstAttribute="centerX" secondItem="inL-Pt-bzA" secondAttribute="centerX" id="64s-hj-jGE"/>
                         <constraint firstItem="2GW-Dj-woc" firstAttribute="top" secondItem="inL-Pt-bzA" secondAttribute="top" constant="50" id="Bfc-Zp-kfh"/>
+                        <constraint firstItem="2GW-Dj-woc" firstAttribute="centerX" secondItem="inL-Pt-bzA" secondAttribute="centerX" id="CZk-27-K25"/>
                         <constraint firstItem="nx7-La-dhq" firstAttribute="leading" secondItem="inL-Pt-bzA" secondAttribute="leading" id="Ftc-Rw-nAM"/>
+                        <constraint firstItem="2GW-Dj-woc" firstAttribute="centerX" secondItem="inL-Pt-bzA" secondAttribute="centerX" id="Gj9-kX-9kp"/>
+                        <constraint firstItem="lQe-xg-sx8" firstAttribute="leading" secondItem="2GW-Dj-woc" secondAttribute="trailing" constant="-5" id="JM6-vj-5a0"/>
+                        <constraint firstItem="yLT-OU-64d" firstAttribute="top" secondItem="2GW-Dj-woc" secondAttribute="bottom" constant="65" id="L4X-MR-mUD"/>
                         <constraint firstItem="2GW-Dj-woc" firstAttribute="centerX" secondItem="inL-Pt-bzA" secondAttribute="centerX" id="L7E-TL-OSB"/>
                         <constraint firstItem="2GW-Dj-woc" firstAttribute="centerX" secondItem="inL-Pt-bzA" secondAttribute="centerX" id="a0L-jB-wkw"/>
                         <constraint firstAttribute="trailing" secondItem="nx7-La-dhq" secondAttribute="trailing" id="bDg-mw-bS9"/>
-                        <constraint firstItem="aEG-y4-PB5" firstAttribute="centerX" secondItem="inL-Pt-bzA" secondAttribute="centerX" id="bRP-rL-0pW"/>
                         <constraint firstItem="nx7-La-dhq" firstAttribute="top" secondItem="inL-Pt-bzA" secondAttribute="top" id="bkb-i5-zNf"/>
-                        <constraint firstItem="aEG-y4-PB5" firstAttribute="leading" secondItem="2GW-Dj-woc" secondAttribute="trailing" constant="-3" id="hsI-sJ-jr0"/>
+                        <constraint firstItem="r6y-ZL-YtH" firstAttribute="centerY" secondItem="2GW-Dj-woc" secondAttribute="centerY" id="coe-H6-lA3"/>
+                        <constraint firstItem="lQe-xg-sx8" firstAttribute="centerY" secondItem="2GW-Dj-woc" secondAttribute="centerY" id="gXq-g0-qxv"/>
+                        <constraint firstItem="r6y-ZL-YtH" firstAttribute="leading" secondItem="2GW-Dj-woc" secondAttribute="trailing" constant="-5" id="qs4-ZZ-ACk"/>
                     </constraints>
                 </view>
             </subviews>
@@ -67,4 +96,8 @@
             <point key="canvasLocation" x="100.8" y="204.19790104947529"/>
         </view>
     </objects>
+    <resources>
+        <image name="account_pingce" width="47" height="21"/>
+        <image name="bg_diandianzhanghu_dengjixinxi_nor" width="17.5" height="22"/>
+    </resources>
 </document>
