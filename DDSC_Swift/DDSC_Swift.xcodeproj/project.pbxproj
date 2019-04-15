@@ -13,6 +13,7 @@
 		2A071C1B21BE4AF5006FE188 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A071C1A21BE4AF5006FE188 /* SwiftyJSON.framework */; };
 		2A55E1A521B6252C000D76A6 /* ZXNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E1A421B6252C000D76A6 /* ZXNetworkingManager.swift */; };
 		2A55E1A721B632D4000D76A6 /* ZXAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55E1A621B632D4000D76A6 /* ZXAPIConstant.swift */; };
+		2A7CB9432264635E00AF62B9 /* ZXLoginOrRegisterVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CB9422264635E00AF62B9 /* ZXLoginOrRegisterVCViewController.swift */; };
 		2A8B444821EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B444621EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift */; };
 		2A8B444921EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B444721EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib */; };
 		2A8B444B21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B444A21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift */; };
@@ -293,6 +294,7 @@
 		2A071C1D21BE5D03006FE188 /* ZX-Bridge-ObjectC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZX-Bridge-ObjectC.h"; sourceTree = "<group>"; };
 		2A55E1A421B6252C000D76A6 /* ZXNetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXNetworkingManager.swift; sourceTree = "<group>"; };
 		2A55E1A621B632D4000D76A6 /* ZXAPIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXAPIConstant.swift; sourceTree = "<group>"; };
+		2A7CB9422264635E00AF62B9 /* ZXLoginOrRegisterVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXLoginOrRegisterVCViewController.swift; sourceTree = "<group>"; };
 		2A8B444621EF0BD30040EBD9 /* ZXMyAccountLeftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountLeftCell.swift; sourceTree = "<group>"; };
 		2A8B444721EF0BD30040EBD9 /* ZXMyAccountLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZXMyAccountLeftCell.xib; sourceTree = "<group>"; };
 		2A8B444A21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountLeftHeaderView.swift; sourceTree = "<group>"; };
@@ -604,6 +606,14 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		2A7CB941226462E000AF62B9 /* ZXLoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				2A7CB9422264635E00AF62B9 /* ZXLoginOrRegisterVCViewController.swift */,
+			);
+			path = ZXLoginVC;
+			sourceTree = "<group>";
+		};
 		2A9E57DA21E5A0AD00B26811 /* ZXMyAccountLeftVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -877,6 +887,7 @@
 			children = (
 				2A9E57D821E59BB600B26811 /* ZXMyAccountSlideVC.swift */,
 				2ADD786D21AF955900F6E6D2 /* ZXMineViewController.swift */,
+				2A7CB941226462E000AF62B9 /* ZXLoginVC */,
 				2A9E57DA21E5A0AD00B26811 /* ZXMyAccountLeftVC */,
 			);
 			path = ZXMine;
@@ -1565,6 +1576,7 @@
 				2ABD577D21C798D100D705FB /* ZXMoreHomeHeadersCell.swift in Sources */,
 				2A9E57DF21E5A30C00B26811 /* ZXMyAccountLeftVC.swift in Sources */,
 				2A55E1A721B632D4000D76A6 /* ZXAPIConstant.swift in Sources */,
+				2A7CB9432264635E00AF62B9 /* ZXLoginOrRegisterVCViewController.swift in Sources */,
 				2ADD786721AF944500F6E6D2 /* ZXRecommendViewController.swift in Sources */,
 				2ADD785D21AE707300F6E6D2 /* MacroDocument.swift in Sources */,
 				2A8B444B21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift in Sources */,
