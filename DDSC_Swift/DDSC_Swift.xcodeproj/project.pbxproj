@@ -24,6 +24,8 @@
 		2ABD577D21C798D100D705FB /* ZXMoreHomeHeadersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD577C21C798D100D705FB /* ZXMoreHomeHeadersCell.swift */; };
 		2ABD577F21C89F8000D705FB /* ZXMoreHomeSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD577E21C89F8000D705FB /* ZXMoreHomeSecondCell.swift */; };
 		2ABD578121C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD578021C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift */; };
+		2AC16AC4226F04C100A5A23C /* ZXInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC16AC3226F04C100A5A23C /* ZXInputView.swift */; };
+		2AC16AC62270380F00A5A23C /* ZXTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC16AC52270380F00A5A23C /* ZXTextFeild.swift */; };
 		2AD0225C21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD0225B21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift */; };
 		2AD0225E21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD0225D21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib */; };
 		2ADD782721AE3E6A00F6E6D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD782621AE3E6A00F6E6D2 /* AppDelegate.swift */; };
@@ -305,6 +307,8 @@
 		2ABD577C21C798D100D705FB /* ZXMoreHomeHeadersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMoreHomeHeadersCell.swift; sourceTree = "<group>"; };
 		2ABD577E21C89F8000D705FB /* ZXMoreHomeSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMoreHomeSecondCell.swift; sourceTree = "<group>"; };
 		2ABD578021C8A8ED00D705FB /* ZXSpecialCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXSpecialCycleScrollView.swift; sourceTree = "<group>"; };
+		2AC16AC3226F04C100A5A23C /* ZXInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXInputView.swift; sourceTree = "<group>"; };
+		2AC16AC52270380F00A5A23C /* ZXTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXTextFeild.swift; sourceTree = "<group>"; };
 		2AD0225B21FAFE3E0047B03B /* ZXMyAccountLeftFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXMyAccountLeftFooterView.swift; sourceTree = "<group>"; };
 		2AD0225D21FAFE5A0047B03B /* ZXMyAccountLeftFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZXMyAccountLeftFooterView.xib; sourceTree = "<group>"; };
 		2ADD782321AE3E6A00F6E6D2 /* DDSC_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDSC_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -652,6 +656,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2AC16AC2226F02F900A5A23C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2AC16AC3226F04C100A5A23C /* ZXInputView.swift */,
+				2AC16AC52270380F00A5A23C /* ZXTextFeild.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		2ADD781A21AE3E6A00F6E6D2 = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +696,7 @@
 				2ADD785E21AE763600F6E6D2 /* Base */,
 				2ADD785B21AE701400F6E6D2 /* Utiles */,
 				2ADD785721AE402400F6E6D2 /* Resources */,
+				2AC16AC2226F02F900A5A23C /* CustomView */,
 				2ADD785821AE403E00F6E6D2 /* Venders */,
 				2ADD785A21AE440500F6E6D2 /* CodeClass */,
 			);
@@ -1560,6 +1574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ADD787021AF956700F6E6D2 /* ZXMoreViewController.swift in Sources */,
+				2AC16AC4226F04C100A5A23C /* ZXInputView.swift in Sources */,
 				2ADD787221AF993400F6E6D2 /* BaseNavigationVC.swift in Sources */,
 				2ADD786C21AF954900F6E6D2 /* ZXProjectViewController.swift in Sources */,
 				2ABD577F21C89F8000D705FB /* ZXMoreHomeSecondCell.swift in Sources */,
@@ -1581,6 +1596,7 @@
 				2ADD785D21AE707300F6E6D2 /* MacroDocument.swift in Sources */,
 				2A8B444B21F1BEC90040EBD9 /* MyAccountLeftHeaderView.swift in Sources */,
 				2ADD786221AE802D00F6E6D2 /* BaseViewController.swift in Sources */,
+				2AC16AC62270380F00A5A23C /* ZXTextFeild.swift in Sources */,
 				2ADD7A0B21B134AE00F6E6D2 /* ZXMoreHomeNewsCell.swift in Sources */,
 				2A9E57D721E4810500B26811 /* ZXUtils.swift in Sources */,
 				2ADD787521AFC31700F6E6D2 /* ZXExtensions.swift in Sources */,

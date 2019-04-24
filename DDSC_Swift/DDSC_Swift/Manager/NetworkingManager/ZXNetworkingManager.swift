@@ -45,13 +45,9 @@ private func judgeNetwork(network: NetworkEnviroment = currentNetwork){
 class ZXNetworkingManager: NSObject {
     
     var reachAbility : Reachability!
-    
     var isNeedAccessToken : Bool = true //是否拼接在url后面的参数
     var baseParams : NSMutableDictionary = [:] //公共参数
-    
     var headers : HTTPHeaders?
-    
-    
     static let  sharedNetworkManager = ZXNetworkingManager()
     let manager = SessionManager.default
     private override init() {
