@@ -21,17 +21,20 @@ class ZXTipView: BaseView {
     var label : UILabel?
     override init(frame: CGRect) {
         super.init(frame:.zero)
+        self.backgroundColor = UIColor.color(hexString: "FEE1B7")
         buildUI()
     }
     
     func buildUI() {
         label = UILabel()
-        label?.backgroundColor = UIColor.color(hexString: "FEE1B7")
+        self.addSubview(label!)
+        
         label?.textAlignment = NSTextAlignment.center
         label?.textColor = UIColor.color(hexString: "ff5933")
         label?.font = UIFont.systemFont(ofSize: 18)
         label?.snp.makeConstraints({ (make) in
             make.center.equalTo(self)
+            //make.edges.equalTo(self)
         })
     }
     

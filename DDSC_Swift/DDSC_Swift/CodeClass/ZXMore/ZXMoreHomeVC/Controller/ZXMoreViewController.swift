@@ -100,7 +100,7 @@ extension ZXMoreViewController{
     }
     
     func buildTableView() {
-        self.tableView = UITableView(frame: CGRect(x: 0, y: 0, width: ZX_WIDTH, height: ZZX_HEIGHT), style: .plain)
+        self.tableView = UITableView(frame: CGRect(x: 0, y: 0, width: ZZX_WIDTH, height: ZZX_HEIGHT), style: .plain)
         self.view.addSubview(self.tableView!)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self

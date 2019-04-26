@@ -48,7 +48,7 @@ class ZXMoreHomeSecondCell: BaseTableViewCell {
         }
         self.turnBtn?.setImage(UIImage.init(named: "icon_arrow"), for: .normal)
         
-        myScrollView = ZXSpecialCycleScrollView.init(frame: CGRect.init(origin: CGPoint.init(x: 0, y: 45), size: CGSize.init(width: ZX_WIDTH, height: 90)))
+        myScrollView = ZXSpecialCycleScrollView.init(frame: CGRect.init(origin: CGPoint.init(x: 0, y: 45), size: CGSize.init(width: ZZX_WIDTH, height: 90)))
        
         myScrollView!.records = [
                                 "http://d.hiphotos.baidu.com/image/pic/item/91ef76c6a7efce1b5ef04082a251f3deb58f659b.jpg",

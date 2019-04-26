@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print("宽度:\(ZX_WIDTH),高度:\(ZZX_HEIGHT) \(DD_MESSAGE_LIST)")
+        print("宽度:\(ZZX_WIDTH),高度:\(ZZX_HEIGHT) \(DD_MESSAGE_LIST)")
         
         //创建tabbar
         self.createTabbar()

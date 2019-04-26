@@ -14,6 +14,9 @@ class ZXLoginOrRegisterVCViewController: BaseViewController {
     var textField : ZXTextFeild?
     var formView : UIView?
     var tipView : ZXTipView?
+    var heightConstraint : NSLayoutConstraint?
+    var nextButton : UIButton?
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "登录/注册"  
@@ -34,23 +37,38 @@ class ZXLoginOrRegisterVCViewController: BaseViewController {
     @objc func back(){
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
+   
 }
 
-extension ZXLoginOrRegisterVCViewController {
+extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
+    
     func buildUI(){
         self.scrollView = UIScrollView()
         scrollView?.showsVerticalScrollIndicator = false
         scrollView?.showsHorizontalScrollIndicator = false
         self.view.addSubview(scrollView!)
-        self.scrollView!.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view)
-        }
-        scrollView!.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//        self.scrollView!.snp.makeConstraints { (make) in
+//            make.edges.equalTo(self.view)
+//        }
+        scrollView!.frame = self.view.bounds
+        scrollView!.contentInset = UIEdgeInsets(top: ZX_NaviBarHeight, left: 0, bottom: 0, right: 0)
+        scrollView?.contentSize = IS_iPhone5 ? CGSize.init(width: ZZX_WIDTH, height: ZZX_HEIGHT + 50) :CGSize.init(width: ZZX_WIDTH, height: ZZX_HEIGHT)
         self.contentView = UIView()
         scrollView?.addSubview(contentView!)
-        contentView?.snp.makeConstraints({ (make) in
-            make.edges.equalTo(self.scrollView!)
+        contentView!.snp.makeConstraints({ (make) in
+            make.bottom.equalTo(scrollView!)
+            make.top.equalTo(scrollView!)
+            make.leading.trailing.equalTo(scrollView!)
+            make.width.equalTo(self.view)
+            make.height.equalTo(IS_iPhone5 ? ZZX_HEIGHT + 50 : ZZX_HEIGHT)
         })
+        let endEditButton = UIButton(type: .custom)
+        contentView?.addSubview(endEditButton)
+        endEditButton.addTarget(self, action: #selector(endEdit), for: .touchUpInside)
+        endEditButton.snp.makeConstraints { (make) in
+            make.edges.equalTo(contentView!)
+        }
+        
         let label = UILabel()
         contentView?.addSubview(label)
         label.text = "输入手机号,用来登录、注册"
@@ -80,7 +98,14 @@ extension ZXLoginOrRegisterVCViewController {
         }
         
         self.textField = ZXTextFeild()
+        textField?.placeholder = "您的手机号"
+        textField?.font = UIFont.systemFont(ofSize:15)
+        textField?.delegate = self
+        textField?.isUserInteractionEnabled = true
+        textField?.keyboardType = UIKeyboardType.numberPad
+        textField?.clearButtonMode = .whileEditing
         formView?.addSubview(textField!)
+        textField?.addTarget(self, action: #selector(textFieldDidChanged(sender:)), for: .editingChanged)
         textField?.snp.makeConstraints({ (make) in
             make.top.equalTo(topLabel.snp.bottom)
             make.leading.equalTo(formView!).offset(15)
@@ -102,11 +127,54 @@ extension ZXLoginOrRegisterVCViewController {
         tipView?.snp.makeConstraints({ (make) in
             make.top.equalTo(centerLabel.snp.bottom)
             make.leading.trailing.equalTo(formView!)
-            make.height.equalTo(1)
+            //self.heightConstraint!.constant = 0
+            make.height.equalTo(0)
         })
         
         formView?.snp.makeConstraints({ (make) in
             make.bottom.equalTo(tipView!)
         })
+        
+        nextButton = UIButton()
+        nextButton?.setTitle("下一步", for: .normal)
+        nextButton?.backgroundColor = UIColor.orange
+        nextButton?.addTarget(self, action: #selector(endEdit), for: .touchUpInside)
+        contentView?.addSubview(nextButton!)
+        nextButton!.snp.makeConstraints { (make) in
+            make.top.equalTo(formView!.snp.bottom).offset(20)
+            make.leading.equalTo(self.view).offset(17)
+            make.trailing.equalTo(self.view).offset(-17)
+            make.height.equalTo(40)
+        }
     }
+    
+    
+    @objc func textFieldDidChanged(sender : UITextField) {
+        count = count + 1
+        print("clickTextField\(count)")
+        tipView?.label?.text = sender.text
+        updateTipViewConstraints()
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        tipView?.label?.text = textField.text
+        updateTipViewConstraints()
+    }
+    
+    func updateTipViewConstraints() {
+        tipView?.snp.updateConstraints({ (make) in
+            make.height.equalTo(50)
+        })
+        self.view.needsUpdateConstraints()
+        UIView.animate(withDuration: 0.3) {
+            self.view.updateConstraintsIfNeeded()
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    
+   @objc  func endEdit() {
+        self.view.endEditing(true)
+    }
+    
 }

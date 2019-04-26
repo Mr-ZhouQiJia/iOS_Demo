@@ -37,7 +37,7 @@ class ZXMoreHomeHeadersCell: BaseTableViewCell {
         self.contentView.addSubview(leftImage!)
         leftImage?.backgroundColor        = UIColor.red
         leftImage?.snp.makeConstraints { (make) in
-            make.width.equalTo(ZX_WIDTH / 2 -  1)
+            make.width.equalTo(ZZX_WIDTH / 2 -  1)
             make.top.bottom.equalTo(self.contentView)
             make.left.equalTo(self.contentView)
         }

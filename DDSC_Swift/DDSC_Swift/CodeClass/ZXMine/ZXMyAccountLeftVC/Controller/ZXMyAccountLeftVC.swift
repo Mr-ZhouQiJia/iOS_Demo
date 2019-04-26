@@ -34,7 +34,7 @@ class ZXMyAccountLeftVC: BaseViewController,UITableViewDelegate,UITableViewDataS
 extension ZXMyAccountLeftVC{
     
     func buildTableView() {
-        self.tableView = UITableView(frame: CGRect(x: 0, y: -44, width: ZX_WIDTH * 0.8, height: ZZX_HEIGHT + 44), style: .plain)
+        self.tableView = UITableView(frame: CGRect(x: 0, y: -44, width: ZZX_WIDTH * 0.8, height: ZZX_HEIGHT + 44), style: .plain)
         self.tableView?.isScrollEnabled = false
         self.tableView?.backgroundColor = UIColor.color(hexString: "e1e6e9")
         self.view.addSubview(self.tableView!)

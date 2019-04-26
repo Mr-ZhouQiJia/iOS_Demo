@@ -11,7 +11,7 @@ import UIKit
 let kSlideWidth : CGFloat = UIScreen.main.bounds.size.width * 0.8
 let Distance : CGFloat = 80.0
 let Duration : CGFloat = 0.3
-let scale    : CGFloat = (ZX_WIDTH * 0.8 - Distance) / (ZX_WIDTH * 0.8)
+let scale    : CGFloat = (ZZX_WIDTH * 0.8 - Distance) / (ZZX_WIDTH * 0.8)
 class ZXMyAccountSlideVC: BaseViewController {
 
     var myAccountMainVC : ZXMineViewController?
@@ -113,9 +113,9 @@ extension ZXMyAccountSlideVC : UIGestureRecognizerDelegate {
     
     //
     func finalPositionWithRightSlide(rightSlide : Bool, mainView : UIView,leftView : UIView) {
-        if rightSlide && mainView.x() > ZX_WIDTH * 0.2 {
+        if rightSlide && mainView.x() > ZZX_WIDTH * 0.2 {
             showLeftView()
-        } else if !rightSlide && mainView.x() > ZX_WIDTH * 0.7 {
+        } else if !rightSlide && mainView.x() > ZZX_WIDTH * 0.7 {
             showLeftView()
         }else {
             showMainView()
@@ -153,11 +153,11 @@ extension ZXMyAccountSlideVC : UIGestureRecognizerDelegate {
     
     //MARK: 添加全屏返回按钮
     func addBackButton() {
-        self.mainButton = UIButton.init(frame:CGRect(x: 0, y: 0, width: ZX_WIDTH, height: ZZX_HEIGHT))
+        self.mainButton = UIButton.init(frame:CGRect(x: 0, y: 0, width:ZZX_WIDTH, height: ZZX_HEIGHT))
         self.mainButton?.addTarget(self, action: #selector(showMainView), for: .touchUpInside)
         self.myAccountMainVC?.navigationController?.view.addSubview(self.mainButton!)
         
-        self.tabMainButton = UIButton(frame: CGRect(x: 0, y: 0, width: ZX_WIDTH, height: 100))
+        self.tabMainButton = UIButton(frame: CGRect(x: 0, y: 0, width:ZZX_WIDTH, height: 100))
         self.tabMainButton?.addTarget(self, action: #selector(showMainView), for: .touchUpInside)
         self.tabBarController?.tabBar.addSubview(self.tabMainButton!)
         
@@ -172,7 +172,7 @@ extension ZXMyAccountSlideVC : UIGestureRecognizerDelegate {
         if self.mainNavi!.topViewController!.isKind(of: ZXMineViewController.classForCoder()) {
             let x = gestureRecognizer.location(in: self.view).x
             print(x)
-            if x <= ZX_WIDTH * 0.2 {
+            if x <= ZZX_WIDTH * 0.2 {
                 print("begin")
                  return true
             }else {

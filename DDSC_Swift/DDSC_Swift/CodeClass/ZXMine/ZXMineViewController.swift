@@ -27,8 +27,8 @@ class ZXMineViewController: BaseViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
+    override func viewDidDisappear(_ animated: Bool){
+        super.viewDidDisappear(true)
         if self.view.subviews.contains(self.propagandaView!) {
             self.propagandaView!.removeFromSuperview()
         }
@@ -37,11 +37,11 @@ class ZXMineViewController: BaseViewController {
 
 extension ZXMineViewController {
     func presentPropagandaView() {
-        self.propagandaView = UIView(frame: CGRect(x: 0, y: 0, width: ZX_WIDTH, height: ZZX_HEIGHT - 48))
+        self.propagandaView = UIView(frame: CGRect(x: 0, y: 0, width: ZZX_WIDTH, height: ZZX_HEIGHT - 48))
         self.propagandaView?.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         self.view.addSubview(self.propagandaView!)
         
-        self.propagandaViewBgView = UIView(frame: CGRect(x: 15, y: ZZX_HEIGHT - 34 - 289, width: ZX_WIDTH - 30, height: 200))
+        self.propagandaViewBgView = UIView(frame: CGRect(x: 15, y: ZZX_HEIGHT - 34 - 289, width: ZZX_WIDTH - 30, height: 200))
         //self.propagandaViewBgView?.backgroundColor = UIColor.black
         //self.propagandaViewBgView?.alpha = 0.8
         self.propagandaView?.addSubview(self.propagandaViewBgView!)

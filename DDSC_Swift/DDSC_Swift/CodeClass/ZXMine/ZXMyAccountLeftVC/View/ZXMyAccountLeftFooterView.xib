@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -70,15 +69,14 @@
             </subviews>
             <color key="backgroundColor" red="0.87982279062271118" green="0.90119796991348267" blue="0.91449081897735596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="M9s-OW-wE4" secondAttribute="bottom" constant="50" id="1gP-w8-gZ5"/>
+                <constraint firstAttribute="bottom" secondItem="M9s-OW-wE4" secondAttribute="bottom" constant="50" id="1gP-w8-gZ5"/>
                 <constraint firstItem="Uli-LU-5CJ" firstAttribute="top" secondItem="UmT-2M-5c3" secondAttribute="bottom" constant="10" id="6wt-fI-00j"/>
                 <constraint firstItem="UmT-2M-5c3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AvL-UZ-0pl"/>
                 <constraint firstItem="Uli-LU-5CJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dac-LL-hhJ"/>
                 <constraint firstItem="M9s-OW-wE4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JQU-fk-A26"/>
-                <constraint firstItem="UmT-2M-5c3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Pxz-oJ-2XE"/>
+                <constraint firstItem="UmT-2M-5c3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Pxz-oJ-2XE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="bottomTelNumLabel" destination="M9s-OW-wE4" id="7yj-gd-PWr"/>
                 <outlet property="telView" destination="UmT-2M-5c3" id="zkD-wg-I34"/>
