@@ -98,7 +98,7 @@ extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
         }
         
         self.textField = ZXTextFeild()
-        textField?.placeholder = "您的手机号"
+        textField?.placeholder = "您的手机号码"
         textField?.font = UIFont.systemFont(ofSize:15)
         textField?.delegate = self
         textField?.isUserInteractionEnabled = true
@@ -148,17 +148,52 @@ extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
         }
     }
     
-    
     @objc func textFieldDidChanged(sender : UITextField) {
-        count = count + 1
-        print("clickTextField\(count)")
-        tipView?.label?.text = sender.text
-        updateTipViewConstraints()
+        let text : String = sender.text!
+        var tipViewText = text
+        if text.count > 0 {
+            if text.count < 4 {
+                tipViewText = text
+               tipView?.label?.text = tipViewText
+            }
+            else if text.count > 3 && text.count < 8{
+                tipViewText = text
+                tipViewText.insert(" ", at: text.index(text.startIndex, offsetBy: 3))
+                tipView?.label?.text = tipViewText
+            }else if text.count > 7  {
+                tipViewText = text
+                tipViewText.insert(" ", at: text.index(text.startIndex, offsetBy: 3))
+                tipViewText.insert(" ", at: text.index(text.startIndex, offsetBy: 8))
+                tipView?.label?.text = tipViewText
+            }
+            if text.count > 11 {
+                let indexs = text.index(text.startIndex, offsetBy: 11)
+                let str = String(text[..<indexs])
+                tipViewText = str
+                tipViewText.insert(" ", at: text.index(text.startIndex, offsetBy: 3))
+                tipViewText.insert(" ", at: text.index(text.startIndex, offsetBy: 8))
+                sender.text = str
+                tipView?.label?.text = tipViewText
+            }
+            updateTipViewConstraints()
+
+        }else{
+            hideTipView()
+        }
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        tipView?.label?.text = textField.text
-        updateTipViewConstraints()
+        let text : String = textField.text!
+        if text.count > 0 {
+            tipView?.label?.text = textField.text
+            updateTipViewConstraints()
+        
+        }
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        hideTipView()
+        return true
     }
     
     func updateTipViewConstraints() {
@@ -172,6 +207,19 @@ extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
         }
     }
     
+    //隐藏tipview
+    func hideTipView() {
+        print("hideTipView")
+        tipView?.label?.text = ""
+        tipView?.snp.updateConstraints({ (make) in
+                make.height.equalTo(0)
+        })
+        self.view.needsUpdateConstraints()
+        UIView.animate(withDuration: 0.3) {
+            self.view.updateConstraintsIfNeeded()
+            self.view.layoutIfNeeded()
+        }
+    }
     
    @objc  func endEdit() {
         self.view.endEditing(true)
