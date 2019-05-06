@@ -82,7 +82,7 @@ extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
         
         self.formView = UIView()
         self.contentView?.addSubview(formView!)
-        formView?.backgroundColor = UIColor.white
+        //formView?.backgroundColor = UIColor.yellow
         formView?.snp.makeConstraints { (make) in
             make.leading.trailing.equalTo(contentView!)
             make.top.equalTo(label.snp.bottom)
@@ -123,6 +123,7 @@ extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
         }
         
         self.tipView = ZXTipView()
+        tipView?.backgroundColor = UIColor.red
         formView?.addSubview(tipView!)
         tipView?.snp.makeConstraints({ (make) in
             make.top.equalTo(centerLabel.snp.bottom)
@@ -187,7 +188,6 @@ extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
         if text.count > 0 {
             tipView?.label?.text = textField.text
             updateTipViewConstraints()
-        
         }
     }
     
@@ -200,6 +200,7 @@ extension ZXLoginOrRegisterVCViewController:UITextFieldDelegate {
         tipView?.snp.updateConstraints({ (make) in
             make.height.equalTo(50)
         })
+        tipView?.label!.backgroundColor = UIColor.clear
         self.view.needsUpdateConstraints()
         UIView.animate(withDuration: 0.3) {
             self.view.updateConstraintsIfNeeded()
