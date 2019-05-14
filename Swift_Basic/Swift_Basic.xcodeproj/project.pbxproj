@@ -30,6 +30,8 @@
 		2AF9CE7822801FC600B0B6C6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9CE7722801FC600B0B6C6 /* BaseViewController.swift */; };
 		2AF9CE7A22801FDF00B0B6C6 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9CE7922801FDF00B0B6C6 /* BaseTableViewCell.swift */; };
 		2AF9CE7C2280208300B0B6C6 /* SuspensionProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9CE7B2280208300B0B6C6 /* SuspensionProgressDemo.swift */; };
+		2AF9CE7F22811BED00B0B6C6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9CE7E22811BED00B0B6C6 /* BaseView.swift */; };
+		2AF9CE81228125AD00B0B6C6 /* WaveProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9CE80228125AD00B0B6C6 /* WaveProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		2AF9CE7722801FC600B0B6C6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2AF9CE7922801FDF00B0B6C6 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		2AF9CE7B2280208300B0B6C6 /* SuspensionProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspensionProgressDemo.swift; sourceTree = "<group>"; };
+		2AF9CE7E22811BED00B0B6C6 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		2AF9CE80228125AD00B0B6C6 /* WaveProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +204,7 @@
 		2AF9CE7422801ECB00B0B6C6 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				2AF9CE7B2280208300B0B6C6 /* SuspensionProgressDemo.swift */,
+				2AF9CE7D22811BB700B0B6C6 /* SuspensionProgressDemo */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -225,8 +229,18 @@
 				2A885164227836800034485D /* BaseNavigationController.swift */,
 				2AF9CE7722801FC600B0B6C6 /* BaseViewController.swift */,
 				2AF9CE7922801FDF00B0B6C6 /* BaseTableViewCell.swift */,
+				2AF9CE7E22811BED00B0B6C6 /* BaseView.swift */,
 			);
 			path = Basic;
+			sourceTree = "<group>";
+		};
+		2AF9CE7D22811BB700B0B6C6 /* SuspensionProgressDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2AF9CE7B2280208300B0B6C6 /* SuspensionProgressDemo.swift */,
+				2AF9CE80228125AD00B0B6C6 /* WaveProgressView.swift */,
+			);
+			path = SuspensionProgressDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF9CE81228125AD00B0B6C6 /* WaveProgressView.swift in Sources */,
 				2A885165227836800034485D /* BaseNavigationController.swift in Sources */,
+				2AF9CE7F22811BED00B0B6C6 /* BaseView.swift in Sources */,
 				2AF9CE7222801E8B00B0B6C6 /* Swift_BasicVC.swift in Sources */,
 				2AF9CE7122801E8B00B0B6C6 /* WebViewController.swift in Sources */,
 				2AF9CE7022801E8B00B0B6C6 /* Swift_Expand.swift in Sources */,
