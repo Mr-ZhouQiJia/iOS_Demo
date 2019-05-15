@@ -18,9 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    Man *man = [[Man alloc]init];
+    Man *aman = [[Man alloc]init];
+    NSLog(@"a%@",aman);
+    [Man attempRelease];
+    NSLog(@"a%@",aman);
     
-    
+    Man *bman = [Man shareSingleton];
+    NSLog(@"b%@",bman);
+    [Man attempRelease];
+    NSLog(@"b%@",bman);
+    Man *cman = [bman copy];
+    NSLog(@"c%@",cman);
+    [Man attempRelease];
+    NSLog(@"c%@",cman);
     
 }
 
