@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<array>
+		<string>123</string>
+		<string>13423</string>
+		<string>1234123</string>
+	</array>
+	<key>河南</key>
+	<string>郑州</string>
+	<key>浙江</key>
+	<string>杭州</string>
+	<key>无极</key>
+	<dict>
+		<key>箭</key>
+		<string>钱钱钱</string>
+		<key>比特币</key>
+		<string>8500</string>
+		<key>ETH</key>
+		<string>536</string>
+	</dict>
+</dict>
+</plist>
