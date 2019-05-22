@@ -20,6 +20,12 @@
 		2A9B04632292507700BC1A6B /* WechatIMG2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A9B04622292507700BC1A6B /* WechatIMG2.jpeg */; };
 		2A9B046522928CBE00BC1A6B /* myplist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A9B046422928CBE00BC1A6B /* myplist.plist */; };
 		2A9B046822929EB800BC1A6B /* NSUserDefalutsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B046722929EB800BC1A6B /* NSUserDefalutsVC.m */; };
+		2A9B046B22939A3600BC1A6B /* NSKeyedArchiverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B046A22939A3600BC1A6B /* NSKeyedArchiverVC.m */; };
+		2A9B046E22939A9F00BC1A6B /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B046D22939A9F00BC1A6B /* Man.m */; };
+		2A9B04712293E28200BC1A6B /* SqliteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B04702293E28200BC1A6B /* SqliteViewController.m */; };
+		2A9B04742293E2AA00BC1A6B /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B04732293E2AA00BC1A6B /* DataManager.m */; };
+		2A9B04772293E2D400BC1A6B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9B04762293E2D400BC1A6B /* libsqlite3.0.tbd */; };
+		2A9B04792293E2DF00BC1A6B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9B04782293E2DF00BC1A6B /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,16 @@
 		2A9B046422928CBE00BC1A6B /* myplist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = myplist.plist; sourceTree = "<group>"; };
 		2A9B046622929EB800BC1A6B /* NSUserDefalutsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUserDefalutsVC.h; sourceTree = "<group>"; };
 		2A9B046722929EB800BC1A6B /* NSUserDefalutsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefalutsVC.m; sourceTree = "<group>"; };
+		2A9B046922939A3600BC1A6B /* NSKeyedArchiverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKeyedArchiverVC.h; sourceTree = "<group>"; };
+		2A9B046A22939A3600BC1A6B /* NSKeyedArchiverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKeyedArchiverVC.m; sourceTree = "<group>"; };
+		2A9B046C22939A9F00BC1A6B /* Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
+		2A9B046D22939A9F00BC1A6B /* Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
+		2A9B046F2293E28200BC1A6B /* SqliteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqliteViewController.h; sourceTree = "<group>"; };
+		2A9B04702293E28200BC1A6B /* SqliteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteViewController.m; sourceTree = "<group>"; };
+		2A9B04722293E2AA00BC1A6B /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		2A9B04732293E2AA00BC1A6B /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		2A9B04762293E2D400BC1A6B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2A9B04782293E2DF00BC1A6B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9B04792293E2DF00BC1A6B /* libsqlite3.tbd in Frameworks */,
+				2A9B04772293E2D400BC1A6B /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +115,7 @@
 				2A9B04442292438500BC1A6B /* DataPersistenceTests */,
 				2A9B044F2292438500BC1A6B /* DataPersistenceUITests */,
 				2A9B04272292437900BC1A6B /* Products */,
+				2A9B04752293E2D400BC1A6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +137,8 @@
 				2A9B042C2292437900BC1A6B /* ViewController.h */,
 				2A9B042D2292437900BC1A6B /* ViewController.m */,
 				2A9B04622292507700BC1A6B /* WechatIMG2.jpeg */,
+				2A9B04722293E2AA00BC1A6B /* DataManager.h */,
+				2A9B04732293E2AA00BC1A6B /* DataManager.m */,
 				2A9B045E2292471100BC1A6B /* class */,
 				2A9B042F2292437900BC1A6B /* Main.storyboard */,
 				2A9B04352292438400BC1A6B /* Assets.xcassets */,
@@ -155,8 +176,23 @@
 				2A9B046422928CBE00BC1A6B /* myplist.plist */,
 				2A9B046622929EB800BC1A6B /* NSUserDefalutsVC.h */,
 				2A9B046722929EB800BC1A6B /* NSUserDefalutsVC.m */,
+				2A9B046922939A3600BC1A6B /* NSKeyedArchiverVC.h */,
+				2A9B046A22939A3600BC1A6B /* NSKeyedArchiverVC.m */,
+				2A9B046C22939A9F00BC1A6B /* Man.h */,
+				2A9B046D22939A9F00BC1A6B /* Man.m */,
+				2A9B046F2293E28200BC1A6B /* SqliteViewController.h */,
+				2A9B04702293E28200BC1A6B /* SqliteViewController.m */,
 			);
 			path = class;
+			sourceTree = "<group>";
+		};
+		2A9B04752293E2D400BC1A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A9B04782293E2DF00BC1A6B /* libsqlite3.tbd */,
+				2A9B04762293E2D400BC1A6B /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9B046B22939A3600BC1A6B /* NSKeyedArchiverVC.m in Sources */,
+				2A9B04742293E2AA00BC1A6B /* DataManager.m in Sources */,
 				2A9B04612292477500BC1A6B /* PlistDemo.m in Sources */,
 				2A9B04342292437900BC1A6B /* DataPersistence.xcdatamodeld in Sources */,
 				2A9B046822929EB800BC1A6B /* NSUserDefalutsVC.m in Sources */,
+				2A9B046E22939A9F00BC1A6B /* Man.m in Sources */,
 				2A9B042E2292437900BC1A6B /* ViewController.m in Sources */,
+				2A9B04712293E28200BC1A6B /* SqliteViewController.m in Sources */,
 				2A9B043C2292438400BC1A6B /* main.m in Sources */,
 				2A9B042B2292437900BC1A6B /* AppDelegate.m in Sources */,
 			);

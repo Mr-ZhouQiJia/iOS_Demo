@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "PlistDemo.h"
 #import "NSUserDefalutsVC.h"
+#import "NSKeyedArchiverVC.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSArray *dataArray;
@@ -57,7 +58,11 @@
         }
             break;
         case 2:
-            
+        {
+            NSKeyedArchiverVC *vc = [[NSKeyedArchiverVC alloc]init];
+            vc.title = _dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 3:
             
